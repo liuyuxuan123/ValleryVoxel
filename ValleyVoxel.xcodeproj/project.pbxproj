@@ -13,6 +13,7 @@
 		31F92D8921C9E6C0004A85A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31F92D8821C9E6C0004A85A6 /* Assets.xcassets */; };
 		31F92D8C21C9E6C0004A85A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31F92D8A21C9E6C0004A85A6 /* LaunchScreen.storyboard */; };
 		31F92D9521C9F5DA004A85A6 /* VoxelConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F92D9421C9F5DA004A85A6 /* VoxelConstants.swift */; };
+		31F92D9C21C9F7FE004A85A6 /* Layers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F92D9B21C9F7FE004A85A6 /* Layers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		31F92D8B21C9E6C0004A85A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31F92D8D21C9E6C0004A85A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31F92D9421C9F5DA004A85A6 /* VoxelConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoxelConstants.swift; sourceTree = "<group>"; };
+		31F92D9B21C9F7FE004A85A6 /* Layers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,11 +58,12 @@
 		31F92D8021C9E6BD004A85A6 /* ValleyVoxel */ = {
 			isa = PBXGroup;
 			children = (
+				31F92D9621C9F7C9004A85A6 /* Sources */,
+				31F92D9421C9F5DA004A85A6 /* VoxelConstants.swift */,
 				31F92D8321C9E6BD004A85A6 /* ViewController.swift */,
 				31F92D8521C9E6BD004A85A6 /* Main.storyboard */,
 				31F92D8A21C9E6C0004A85A6 /* LaunchScreen.storyboard */,
 				31F92D9321C9E725004A85A6 /* Support Files */,
-				31F92D9421C9F5DA004A85A6 /* VoxelConstants.swift */,
 			);
 			path = ValleyVoxel;
 			sourceTree = "<group>";
@@ -73,6 +76,46 @@
 				31F92D8D21C9E6C0004A85A6 /* Info.plist */,
 			);
 			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		31F92D9621C9F7C9004A85A6 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				31F92D9721C9F7D9004A85A6 /* Layers */,
+				31F92D9A21C9F7ED004A85A6 /* Groups */,
+				31F92D9921C9F7E7004A85A6 /* Managers */,
+				31F92D9821C9F7E1004A85A6 /* Nodes */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		31F92D9721C9F7D9004A85A6 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				31F92D9B21C9F7FE004A85A6 /* Layers.swift */,
+			);
+			path = Layers;
+			sourceTree = "<group>";
+		};
+		31F92D9821C9F7E1004A85A6 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
+		31F92D9921C9F7E7004A85A6 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		31F92D9A21C9F7ED004A85A6 /* Groups */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Groups;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +192,7 @@
 				31F92D9521C9F5DA004A85A6 /* VoxelConstants.swift in Sources */,
 				31F92D8421C9E6BD004A85A6 /* ViewController.swift in Sources */,
 				31F92D8221C9E6BD004A85A6 /* AppDelegate.swift in Sources */,
+				31F92D9C21C9F7FE004A85A6 /* Layers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
