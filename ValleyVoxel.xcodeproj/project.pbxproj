@@ -54,14 +54,22 @@
 		31F92D8021C9E6BD004A85A6 /* ValleyVoxel */ = {
 			isa = PBXGroup;
 			children = (
-				31F92D8121C9E6BD004A85A6 /* AppDelegate.swift */,
 				31F92D8321C9E6BD004A85A6 /* ViewController.swift */,
 				31F92D8521C9E6BD004A85A6 /* Main.storyboard */,
-				31F92D8821C9E6C0004A85A6 /* Assets.xcassets */,
 				31F92D8A21C9E6C0004A85A6 /* LaunchScreen.storyboard */,
-				31F92D8D21C9E6C0004A85A6 /* Info.plist */,
+				31F92D9321C9E725004A85A6 /* Support Files */,
 			);
 			path = ValleyVoxel;
+			sourceTree = "<group>";
+		};
+		31F92D9321C9E725004A85A6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				31F92D8121C9E6BD004A85A6 /* AppDelegate.swift */,
+				31F92D8821C9E6C0004A85A6 /* Assets.xcassets */,
+				31F92D8D21C9E6C0004A85A6 /* Info.plist */,
+			);
+			path = "Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
