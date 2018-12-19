@@ -14,6 +14,10 @@
 		31F92D8C21C9E6C0004A85A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31F92D8A21C9E6C0004A85A6 /* LaunchScreen.storyboard */; };
 		31F92D9521C9F5DA004A85A6 /* VoxelConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F92D9421C9F5DA004A85A6 /* VoxelConstants.swift */; };
 		31F92D9C21C9F7FE004A85A6 /* Layers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F92D9B21C9F7FE004A85A6 /* Layers.swift */; };
+		31F92D9F21CA02A5004A85A6 /* VoxelDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F92D9E21CA02A5004A85A6 /* VoxelDisplayable.swift */; };
+		31F92DA121CA02D2004A85A6 /* VoxelPaintable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F92DA021CA02D2004A85A6 /* VoxelPaintable.swift */; };
+		31F92DA321CA068F004A85A6 /* VoxelStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F92DA221CA068F004A85A6 /* VoxelStructs.swift */; };
+		31F92DA521CA0767004A85A6 /* SurfaceDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F92DA421CA0767004A85A6 /* SurfaceDisplayable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		31F92D8D21C9E6C0004A85A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31F92D9421C9F5DA004A85A6 /* VoxelConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoxelConstants.swift; sourceTree = "<group>"; };
 		31F92D9B21C9F7FE004A85A6 /* Layers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layers.swift; sourceTree = "<group>"; };
+		31F92D9E21CA02A5004A85A6 /* VoxelDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoxelDisplayable.swift; sourceTree = "<group>"; };
+		31F92DA021CA02D2004A85A6 /* VoxelPaintable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoxelPaintable.swift; sourceTree = "<group>"; };
+		31F92DA221CA068F004A85A6 /* VoxelStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoxelStructs.swift; sourceTree = "<group>"; };
+		31F92DA421CA0767004A85A6 /* SurfaceDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfaceDisplayable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,8 @@
 		31F92D9821C9F7E1004A85A6 /* Nodes */ = {
 			isa = PBXGroup;
 			children = (
+				31F92DA221CA068F004A85A6 /* VoxelStructs.swift */,
+				31F92D9D21CA028B004A85A6 /* Protocols */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
@@ -116,6 +126,16 @@
 			children = (
 			);
 			path = Groups;
+			sourceTree = "<group>";
+		};
+		31F92D9D21CA028B004A85A6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				31F92D9E21CA02A5004A85A6 /* VoxelDisplayable.swift */,
+				31F92DA021CA02D2004A85A6 /* VoxelPaintable.swift */,
+				31F92DA421CA0767004A85A6 /* SurfaceDisplayable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,9 +209,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31F92D9F21CA02A5004A85A6 /* VoxelDisplayable.swift in Sources */,
+				31F92DA121CA02D2004A85A6 /* VoxelPaintable.swift in Sources */,
+				31F92DA321CA068F004A85A6 /* VoxelStructs.swift in Sources */,
 				31F92D9521C9F5DA004A85A6 /* VoxelConstants.swift in Sources */,
 				31F92D8421C9E6BD004A85A6 /* ViewController.swift in Sources */,
 				31F92D8221C9E6BD004A85A6 /* AppDelegate.swift in Sources */,
+				31F92DA521CA0767004A85A6 /* SurfaceDisplayable.swift in Sources */,
 				31F92D9C21C9F7FE004A85A6 /* Layers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
