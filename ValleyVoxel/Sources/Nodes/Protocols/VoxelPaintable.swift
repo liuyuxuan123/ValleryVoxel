@@ -30,7 +30,7 @@ public enum VoxelPaintCommand {
     case faceTransparency(value: CGFloat, face: VoxelFace)
     
 }
-
+// VoxelPaintable -> Can be apply to some command
 public protocol VoxelPaintable {
     
     func apply(_ command: VoxelPaintCommand)
@@ -41,49 +41,4 @@ public protocol VoxelPaintable {
     func paint(with colors: [UIColor], start: CGPoint, end: CGPoint)
 }
 
-extension VKSurfaceDisplayable {
-    
-    public func apply(_ command: VoxelPaintCommand ) {
-        apply(command, animated: false)
-    }
-    
-    public func apply(_ command: VoxelPaintCommand, animated: Bool, completion: (() -> Void)? = nil) {
-        let changes = {
-            switch command {
-            case .color(let content):
-                self.paint(with: content)
-            case .image(let content):
-                self.paint(with: content)
-            case .gradient(let contents, let start, let end):
-                self.paint(with: contents, start: start, end: end)
-            case .transparency(let value):
-                self.updateSurfaceTransparency(with: value)
-            default:
-                debugPrint("Command: \(command) is not supported by instance of type: \(type(of: self))")
-                break
-            }
-        }
-        
-        if animated {
-            SCNTransaction.animate(with: VoxelConstants.defaultAnimationDuration, changes, completion)
-        } else {
-            changes()
-            completion?()
-        }
-    }
-    
-    public func paint(with color: UIColor) {
-        let layer = ColoredLayer(color: color)
-        updateSurfaceMaterial(with: layer)
-    }
-    
-    public func paint(with image: UIImage) {
-        let layer = TexturedLayer(image: image)
-        updateSurfaceMaterial(with: layer)
-    }
-    
-    public func paint(with colors: [UIColor], start: CGPoint, end: CGPoint) {
-        let layer = GradientedLayer(colors: colors, start: start, end: end)
-        updateSurfaceMaterial(with: layer)
-    }
-}
+

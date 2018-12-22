@@ -7,12 +7,20 @@
 //
 
 import UIKit
+import SceneKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var scnView: SCNView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let scene = SCNScene()
+        scene.rootNode.addChildNode(VoxelTileNode(color: UIColor.red))
+        self.scnView.scene = scene  
+        self.scnView.allowsCameraControl = true
+        self.scnView.autoenablesDefaultLighting = true
+        
     }
 
 
