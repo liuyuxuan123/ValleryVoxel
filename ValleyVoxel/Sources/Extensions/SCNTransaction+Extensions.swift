@@ -30,6 +30,7 @@ public enum SCNTransactionTimingFunction {
 }
 
 extension SCNTransaction {
+    // Change
     public static func animate(with duration: TimeInterval,
                                timingFunction: SCNTransactionTimingFunction = .default,
                                _ animation: @escaping () -> Void,
@@ -37,6 +38,7 @@ extension SCNTransaction {
         
         SCNTransaction.begin()
         SCNTransaction.animationTimingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName(rawValue: timingFunction.value))
+        
         SCNTransaction.animationDuration = duration
         animation()
         SCNTransaction.completionBlock = completion
